@@ -7,6 +7,9 @@
   "author": "Marcello Bastea-Forte <marcello@descript.com>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "index.js"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@jest/reporters": "^27"
