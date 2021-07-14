@@ -1,6 +1,6 @@
 {
   "name": "@descript/jest-github-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "silence console and report errors to github",
   "main": "index.js",
   "repository": "https://github.com/descriptinc/jest-github-reporter",
