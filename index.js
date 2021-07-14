@@ -20,6 +20,9 @@ module.exports = class GithubReporter extends DefaultReporter {
 
     onTestResult(test, testResult, aggregatedResults) {
         super.onTestResult(test, testResult, aggregatedResults);
+        if (process.env.GITHUB_ACTIONS !== 'true') {
+            return;
+        }
         // Based on https://github.com/stefanbuck/jest-matcher/pull/2/files
         const { testResults, testFilePath } = testResult;
         for (const { failureMessages } of testResults) {
